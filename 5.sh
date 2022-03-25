@@ -4,10 +4,10 @@ while true
     do
     y=$x
     read x
-    if [ $x -ge 0 ]
+    if [[ $x -ge 0 ]]
         then
         x=$(($x + $y))
-    elif [ $x -lt 0 ]
+    elif [[ $x -lt 0 ]]
         then
         break
     fi

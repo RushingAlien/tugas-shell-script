@@ -3,16 +3,16 @@ read x
 read y
 read operation
 
-if [ $operation = 't' ]
+if [[ $operation = 't' ]]
     then
     z=$(($x+$y))
-elif [ $operation = 'k' ]
+elif [[ $operation = 'k' ]]
     then
     z=$(($x-$y))
-elif [ $operation = 'b' ]
+elif [[ $operation = 'b' ]]
     then
     z=$(($x/$y))
-elif [ $operation = 'x' ]
+elif [[ $operation = 'x' ]]
     then
     z=$(($x*$y))
 else
